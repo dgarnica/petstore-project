@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Satisfy');
 
+body {
+  cursor: default;
+  overflow-x: hidden;
+}
+
 /*// Navigation & Header //*/
 
 header {
@@ -66,15 +71,19 @@ nav>ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.7em;
   font-weight: bold;
-  margin-top: 1.1em;
-  margin-right: 1em;
-  color: #66bcdc;
+  margin-top: 0.5em;
+  margin-right: 2em;
+
 }
 
 header>nav>ul li {
   float: left;
   margin-top: 0em;
   margin-left: 0.75em;
+}
+
+header>nav>ul li a {
+  color: #66bcdc;
 }
 
 /*// Hero and Tagline //*/
@@ -91,28 +100,69 @@ header>nav>ul li {
 #herotron>p {
   position: relative;
   left: 50%;
-  top: 3em;
+  top: 0.5em;
   width: 100%;
   transform: translateX(-50%);
 
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.75em;
-  font-weight: 200;
+  font-size: 2em;
+  font-weight: 500;
   text-align: center;
-  color: #fff;
+  color: #dedede;
+  background-color: transparent;
+  background-color: rgba(75, 75, 75, 0.2);
 }
+
+/*/// Featured Products ///*/
 
 #featured {
-  margin-top: 10em;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 12em;
 }
 
-#products div {
-
+#featured>div>h1 {
+  font-weight: bold;
 }
 
+#featured>div>p {
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+/*// Product Information //*/
 #products div img {
   max-width: 100%;
   max-height: 100%;
+}
+
+#products div {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#products div h2 {
+  font-size: 2.15em;
+}
+
+/*/// Services Aside ///*/
+
+aside {
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+}
+
+aside>h1 {
+  font-weight: bold;
+}
+
+aside h4 {
+  color: #66bcdc;
+  font-weight: bold;
+  margin-top: 1.25em;
+}
+
+aside p {
+  font-weight: lighter;
+  font-size: 1.15em;
 }
 
 /*// Footer Styling //*/
@@ -124,18 +174,24 @@ footer {
 }
 
 footer>img {
-  height: 6em;
-  width: 8em;
-  margin-top: 3em;
+  height: 4em;
+  width: 6em;
+  margin-top: 4em;
+  margin-right: 0.5em;
   margin-left: 0em;
 }
 
 .foot-container {
   position: relative;
   height: 8em;
-  width: 6em;
   border-left: 0.15em groove #777;
   margin-top: 2.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 1em;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
 }
 
 /*// Footer Styling for Desktop //*/
@@ -145,13 +201,16 @@ footer>img {
     width: 15em;
     border-left: 0.15em groove #777;
     margin-left: 5em;
+    padding-left: 0.5em;
+    padding-top: 1em;
     margin-top: 2.5em;
   }
 
   footer>img {
     height: 6em;
     width: 8em;
-    margin-top: 2.5em;
+    margin-top: 3em;
     margin-left: 2em;
+    margin-right: -1em;
   }
 }
